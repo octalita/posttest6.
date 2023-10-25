@@ -1,0 +1,125 @@
+/* style.css */
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around; /* Ini akan mengatur produk ke samping */
+    flex-wrap: wrap; /* Ini akan membuat produk terlipat jika tidak cukup ruang */
+}
+
+.product-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px; /* Memberikan jarak antar produk */
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: #555;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-mode .cta-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.light-mode .header-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .cta-button {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.dark-mode .header-button {
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
